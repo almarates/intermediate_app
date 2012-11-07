@@ -1,0 +1,124 @@
+["hip","hip"] jijiji
+command k (clears terminal)
+
+-variables
+can't start with number
+has to be descriptive
+myvariable = xx
+lower case letter
+
+---
+
+-booleans
+true false
+yes or no
+
+---
+
+-array [ordered group of elements, if elements in " can be created]. elements are numbered (start at 0) so it can be easier to write them = [1]
+[6, 12, 13, "fruit", "mokasiena"]
+fruits = ["kiwi", "strawberry", "plum"]
+(reads "fruit" as the array)
+
+---
+
+-string
+something with quotes around it
+
+---
+
+-hash
+{}
+gives qualities to variables
+car = { "make" => "Ford", "color" => "blue" }
+ => {"make"=>"Ford", "color"=>"blue"}
+car["color"]
+"blue"
+
+key: "make"
+value: "Ford"
+
+---
+
+-methods/funtion to know all methods: array.methods (in the example fruits.methods)
+actions to take in the code (linked to an object, such as an array)
+ex: To say I like to each fruit in an array ( |fruit| = make a temporary variable )
+fruits.each {|fruit| puts "I like #{fruit}"}
+I like kiwi
+I like strawberry
+I like plum
+ex2: fruits.each {|fruit| 3.times {puts "I like #{fruit}"}}
+I like kiwi
+I like kiwi
+I like kiwi
+I like strawberry
+I like strawberry
+I like strawberry
+I like plum
+I like plum
+I like plum
+ex3:(in different lines
+fruits.each do |fruit|
+puts "I like #{fruit}"
+end
+
+ex3:car.each {|key, value| puts "#{key} is a #{value}"}
+make is a Ford
+color is a blue
+
+---
+
+-conditional
+ex: my_variable = 5
+if my_variable > 1
+puts "YAY"
+
+---
+
+-terms and commands
+. = where you are currently
+irb = interactive ruby
+ls = list directory contents
+cd = change directory
+pwd = print current directory path
+mkdir = make directory
+files .rb = text files
+rails new "name" = make rails new project <program and command structure>
+rails --help = todo sobre tu rails <program and command structure>
+git init = version control, tracks changes in files <program and command structure>
+git --help <program and command structure>
+git status = see changes <program and command structure>
+git add -A = add everything (as opposed to a specific file)
+git add "file" = add specific file
+git commit -m "message" =
+bundle (one line) rails server (second line) = starts rails server
+ssh key = connects github with your computer, just need one for one computer
+repository = list of online changes of your app (github), each app uses one repo (if collaborating you use one repo, but different ssh keys)
+http://localhost:3000 = local host
+rails generate scaffold topic title:string description:text = generate scaffold tells rails to create everything necessary to get up and running with topics.
+topic tells rails the name of the new model. title:string says that topics have a title, which is a string. description:text says that topics have a description which is a "text". (We're befuddled by the difference too.)
+scaffold = ?
+class = template with a set of instructions, type of object ; ex object:person class:tall
+models = ?
+rake db:migrate = puts things in A 
+git push heroku master = push to heroku
+how to deploy rails app in hosting?
+-always after a change :
+1 git add .
+2 git commit -m
+3 git push (origin master)
+4 git push heroku master
+5 (if db changed) heroku run rake db:migrate
+
+---
+
+-directories
+assets = css, js, images
+controllers = .rb 
+helpers = .rb
+mailers = for sending emails
+models = .rb, classes that create the object (it's always also on database)
+views = html (creates html.rb)
+
+
+
